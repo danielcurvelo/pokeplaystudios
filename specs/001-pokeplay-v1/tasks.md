@@ -10,4 +10,4 @@
 - [x] Remove unused starter preview/dependency.
 - [x] Update tests.
 - [x] Run production build and tests.
-- [ ] Publish deployed site.
+- [x] Publish deployed site.
