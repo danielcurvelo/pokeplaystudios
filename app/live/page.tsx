@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import { PageShell, ReviewBand, SectionHeader, whatnotUrl } from "../site";
 
 export const metadata: Metadata = {
@@ -26,9 +25,9 @@ export default function LivePage() {
           <a className="button primary" href={whatnotUrl}>
             Follow on Whatnot
           </a>
-          <Link className="button secondary" href="/contact">
+          <a className="button secondary" href="/contact">
             Bookmark a Show
-          </Link>
+          </a>
         </div>
       </section>
       <ReviewBand />

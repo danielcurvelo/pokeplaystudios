@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 export const whatnotUrl = "https://www.whatnot.com/user/pokeplaylive";
 
 const navItems = [
@@ -12,7 +10,7 @@ export function PageShell({ children }: { children: React.ReactNode }) {
   return (
     <>
       <header className="site-header">
-        <Link className="brand" href="/" aria-label="PokePlay Studios home">
+        <a className="brand" href="/" aria-label="PokePlay Studios home">
           <img
             className="brand-wordmark"
             src="/pokeplay-studios-wordmark-v2.png"
@@ -20,12 +18,12 @@ export function PageShell({ children }: { children: React.ReactNode }) {
             width="220"
             height="66"
           />
-        </Link>
+        </a>
         <nav aria-label="Main navigation">
           {navItems.map((item) => (
-            <Link href={item.href} key={item.href}>
+            <a href={item.href} key={item.href}>
               {item.label}
-            </Link>
+            </a>
           ))}
         </nav>
       </header>
@@ -39,7 +37,7 @@ export function PageShell({ children }: { children: React.ReactNode }) {
         </div>
         <div className="footer-links">
           <a href={whatnotUrl}>Whatnot</a>
-          <Link href="/contact">Stay connected</Link>
+          <a href="/contact">Stay connected</a>
         </div>
         <p className="disclaimer">
           PokePlay is an independent seller and community. We are not affiliated

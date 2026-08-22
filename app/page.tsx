@@ -1,4 +1,3 @@
-import Link from "next/link";
 import type { Metadata } from "next";
 import {
   FaqSchema,
@@ -59,12 +58,12 @@ export default function Home() {
             <a className="button primary" href={whatnotUrl}>
               Enter PokePlay Live
             </a>
-            <Link className="button secondary" href="/contact">
+            <a className="button secondary" href="/contact">
               Follow on Whatnot
-            </Link>
-            <Link className="button quiet" href="/shop">
+            </a>
+            <a className="button quiet" href="/shop">
               Visit PokePlay Store
-            </Link>
+            </a>
           </div>
         </div>
         <div className="hero-panel" aria-label="PokePlayLive stream highlights">
