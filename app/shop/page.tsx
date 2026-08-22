@@ -15,11 +15,11 @@ export default function ShopPage() {
     <PageShell>
       <section className="page-hero compact">
         <p className="eyebrow">PokePlay Store</p>
-        <h1>Pokemon card shop today on Whatnot, with a full store coming later.</h1>
+        <h1>Your next favorite card might already be waiting.</h1>
         <p>
-          The current shop experience lives on Whatnot while supplier and Shopify
-          plans come together. Follow the store now for available listings and
-          future drops.
+          PokePlay Store is growing into a home for the cards you want to keep,
+          rip, trade, and display. For now, the shelves are open on Whatnot,
+          with current listings and live finds ready when you are.
         </p>
         <a className="button primary" href={whatnotUrl}>
           Shop on Whatnot
@@ -30,23 +30,23 @@ export default function ShopPage() {
         <SectionHeader
           eyebrow="Future catalog"
           title="Built to grow into a real Pokemon TCG storefront."
-          body="The site is ready for shop categories without publishing empty inventory pages before they are useful."
+          body="We are building the kind of shop we want to browse ourselves: clear categories, interesting inventory, and no filler."
         />
         <div className="feature-grid">
           <article className="feature-card">
             <span className="dot" aria-hidden="true" />
             <h3>Sealed Pokemon TCG</h3>
-            <p>Booster boxes, ETBs, booster bundles, packs, and special releases.</p>
+            <p>Booster boxes, ETBs, packs, and special releases for your next rip night.</p>
           </article>
           <article className="feature-card">
             <span className="dot" aria-hidden="true" />
             <h3>Singles and slabs</h3>
-            <p>Individual cards and graded collectibles as inventory expands.</p>
+            <p>Chase cards, binder upgrades, and graded pieces with display-case energy.</p>
           </article>
           <article className="feature-card">
             <span className="dot" aria-hidden="true" />
             <h3>Drop alerts</h3>
-            <p>Email alerts can announce new stock, auction events, and giveaways.</p>
+            <p>Follow on Whatnot now, with dedicated drop alerts coming as the shop grows.</p>
           </article>
         </div>
       </section>

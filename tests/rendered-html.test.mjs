@@ -28,10 +28,10 @@ test("server-renders the PokePlay homepage", async () => {
   assert.match(response.headers.get("content-type") ?? "", /^text\/html\b/i);
 
   const html = await response.text();
-  assert.match(html, /PokePlay Store \| Live Pokemon Card Auctions/);
-  assert.match(html, /Live Pokemon card auctions with more game in every play\./);
+  assert.match(html, /PokePlay Studios \| Pokemon Cards, Live Auctions &amp; Drops/);
+  assert.match(html, /The game room for Pokemon card collectors\./);
   assert.match(html, /https:\/\/www\.whatnot\.com\/user\/pokeplaylive/);
-  assert.match(html, /Utah-based\. Shipping nationwide\./);
+  assert.match(html, /PokePlay Studios/);
   assert.match(html, /not affiliated with, endorsed by, or sponsored by Pokemon/);
   assert.match(html, /application\/ld\+json/);
   assert.doesNotMatch(html, /codex-preview|Your site is taking shape|react-loading-skeleton/);

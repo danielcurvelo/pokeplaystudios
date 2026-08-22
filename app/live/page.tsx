@@ -16,11 +16,11 @@ export default function LivePage() {
     <PageShell>
       <section className="page-hero compact">
         <p className="eyebrow">PokePlayLive</p>
-        <h1>Follow the stream for the next live Pokemon card auction.</h1>
+        <h1>Every show is a new seat in the game room.</h1>
         <p>
-          We go live when time and inventory line up, so the best way to catch
-          the next auction is to follow PokePlayLive on Whatnot and join stream
-          alerts.
+          PokePlay Live turns Pokemon card auctions into a proper hangout. We go
+          live when the cards are ready, so follow on Whatnot and you will be in
+          the loop when the next round starts.
         </p>
         <div className="hero-actions">
           <a className="button primary" href={whatnotUrl}>
@@ -35,24 +35,24 @@ export default function LivePage() {
       <section className="section-grid">
         <SectionHeader
           eyebrow="What to expect"
-          title="Auctions that feel like a collector game room."
-          body="PokePlayLive is built for buyers who want fun, trust, and a good shot at cards they are excited to add to a collection."
+          title="A good auction has more than good cards."
+          body="Expect a welcoming room, real collector energy, and a rotating mix of cards that keeps every stream interesting."
         />
         <div className="feature-grid">
           <article className="feature-card">
             <span className="dot" aria-hidden="true" />
-            <h3>Flexible live shows</h3>
-            <p>Follow on Whatnot and join alerts instead of relying on a fixed schedule.</p>
+            <h3>Shows worth catching</h3>
+            <p>Our schedule follows the cards, so a Whatnot follow is your best invite to the next one.</p>
           </article>
           <article className="feature-card">
             <span className="dot" aria-hidden="true" />
-            <h3>Giveaway-friendly energy</h3>
-            <p>Streams are designed to feel fun and approachable for collectors.</p>
+            <h3>A little extra fun</h3>
+            <p>Giveaways and surprises keep the room lively whether you are hunting or just hanging out.</p>
           </article>
           <article className="feature-card">
             <span className="dot" aria-hidden="true" />
             <h3>Nationwide shipping</h3>
-            <p>Based in Utah and serving collectors across the United States.</p>
+            <p>Join from wherever you collect. We ship cards to collectors across the United States.</p>
           </article>
         </div>
       </section>

@@ -1,12 +1,12 @@
 # PokePlay V1 Website Spec
 
 ## Objective
-Launch a small SEO-focused website for PokePlay Store and PokePlayLive that promotes the Whatnot stream, points buyers to current Whatnot listings, and prepares for future email alerts and Shopify storefront expansion.
+Launch a small SEO-focused website for PokePlay Studios, with PokePlay Live promoting the Whatnot stream and PokePlay Store pointing buyers to current listings while preparing for future email alerts and storefront expansion.
 
 ## Requirements
 - Use `pokeplay.store` as the canonical site domain.
-- Present PokePlayLive as the stream brand and PokePlay Store as the shop brand.
-- Prioritize national online buyer SEO while mentioning that PokePlay is Utah-based and ships nationwide.
+- Present PokePlay Studios as the parent brand, PokePlay Live as the stream brand, and PokePlay Store as the shop brand.
+- Prioritize national online buyer SEO and communicate nationwide shipping.
 - Avoid publishing exact review, sales, follower, or shipping statistics in primary copy so the site does not go stale.
 - Link primary shop and stream CTAs to `https://www.whatnot.com/user/pokeplaylive`.
 - Include signup UI for stream reminders, drop alerts, and giveaways, but do not imply live subscriber capture until Resend/storage is wired.

@@ -10,7 +10,7 @@
 - Lead with live Pokemon card auctions and Whatnot following.
 - Support the future store without publishing empty product categories as standalone pages.
 - Use flexible stream language because the schedule changes.
-- Use "Utah-based, shipping nationwide" as a trust signal, not a local-only SEO strategy.
+- Use nationwide shipping as a trust signal, without location-specific positioning.
 
 ## Validation
 - Production build must pass.

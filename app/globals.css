@@ -356,6 +356,13 @@ h3 {
   gap: 14px;
 }
 
+.shop-brand-logo {
+  display: block;
+  justify-self: center;
+  max-width: 230px;
+  width: 54%;
+}
+
 .product-card {
   min-height: 150px;
   position: relative;

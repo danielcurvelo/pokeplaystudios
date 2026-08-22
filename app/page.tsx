@@ -11,9 +11,9 @@ import {
 } from "./site";
 
 export const metadata: Metadata = {
-  title: "PokePlay Store | Live Pokemon Card Auctions & Collector Drops",
+  title: "PokePlay Studios | Pokemon Cards, Live Auctions & Collector Drops",
   description:
-    "Join PokePlayLive for live Pokemon card auctions on Whatnot, collector-friendly drops, giveaways, and future PokePlay Store releases shipped nationwide.",
+    "PokePlay Studios brings PokePlay Live auctions and PokePlay Store collector drops together for Pokemon TCG fans nationwide.",
   alternates: {
     canonical: "/",
   },
@@ -32,9 +32,9 @@ const faqs = [
       "The fastest way to shop with us today is through the PokePlayLive Whatnot profile, where current listings and live auctions are hosted.",
   },
   {
-    question: "Do you ship outside Utah?",
+    question: "Where does PokePlay ship?",
     answer:
-      "Yes. PokePlay is based in Utah and ships to collectors across the United States through our live auction and shop channels.",
+      "PokePlay ships to collectors across the United States through our live auction and shop channels.",
   },
   {
     question: "Is PokePlay affiliated with Pokemon or Whatnot?",
@@ -49,22 +49,22 @@ export default function Home() {
       <FaqSchema faqs={faqs} />
       <section className="hero" aria-labelledby="home-title">
         <div className="hero-copy">
-          <p className="eyebrow">Utah-based. Shipping nationwide.</p>
-          <h1 id="home-title">Live Pokemon card auctions with more game in every play.</h1>
+          <p className="eyebrow">PokePlay Studios</p>
+          <h1 id="home-title">The game room for Pokemon card collectors.</h1>
           <p className="hero-lede">
-            PokePlayLive brings collector-friendly Whatnot auctions, giveaways, sealed
-            drops, singles, slabs, and the future PokePlay Store into one energetic
-            game-room hub.
+            PokePlay Studios is home to PokePlay Live, where every auction feels
+            like a seat at the table, and PokePlay Store, where collector finds
+            get a second chance to become your favorite card. We ship nationwide.
           </p>
           <div className="hero-actions" aria-label="Primary actions">
             <a className="button primary" href={whatnotUrl}>
-              Follow on Whatnot
+              Enter PokePlay Live
             </a>
             <Link className="button secondary" href="/contact">
-              Join Stream Alerts
+              Get Drop Alerts
             </Link>
             <Link className="button quiet" href="/shop">
-              Shop Current Listings
+              Visit PokePlay Store
             </Link>
           </div>
         </div>
@@ -93,7 +93,7 @@ export default function Home() {
         <SectionHeader
           eyebrow="Built for collectors"
           title="A simple path from stream to shop."
-          body="The first launch is focused on discovery and trust. It points buyers to Whatnot today while giving PokePlay Store a clean place to grow."
+          body="Whether you are chasing a nostalgic pull, a clean slab, or the next pack to rip, PokePlay Studios gives each part of the hobby its own front door."
         />
         <div className="feature-grid">
           {auctionHighlights.map((item) => (
@@ -101,8 +101,8 @@ export default function Home() {
               <span aria-hidden="true" className="dot" />
               <h3>{item}</h3>
               <p>
-                Low-maintenance launch copy keeps the site accurate even when
-                inventory, show times, and supplier plans change.
+                Clear listings, careful shipping, and a little game-room fun make
+                the hunt feel like the best part of collecting.
               </p>
             </article>
           ))}
@@ -116,9 +116,9 @@ export default function Home() {
           <p className="eyebrow">Stream alerts</p>
           <h2>Get reminders for the next live auction.</h2>
           <p>
-            Signups are designed for Resend wiring next. For v1, the form sets
-            expectations clearly while the backend subscriber workflow is still
-            being finished.
+            There is no fixed calendar to maintain here. A Whatnot follow is the
+            easiest way to get the tap on the shoulder when the next PokePlay
+            Live auction is ready to go.
           </p>
         </div>
         <AlertsForm />
@@ -127,8 +127,8 @@ export default function Home() {
       <section className="faq-section" aria-labelledby="faq-title">
         <SectionHeader
           eyebrow="Quick answers"
-          title="For new collectors finding PokePlay."
-          body="Clear, search-friendly answers help buyers understand where to shop, how to follow the stream, and how PokePlay fits into the broader collector community."
+          title="Start wherever you collect."
+          body="A few quick answers before you dive into the next auction or browse the current shop."
         />
         <div className="faq-list">
           {faqs.map((faq) => (

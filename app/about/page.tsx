@@ -3,9 +3,9 @@ import Link from "next/link";
 import { PageShell, ReviewBand } from "../site";
 
 export const metadata: Metadata = {
-  title: "About PokePlay | Pokemon Card Auctions & Collectors",
+  title: "About PokePlay Studios | Pokemon Card Collectors",
   description:
-    "PokePlay is a Utah-based Pokemon card stream and future online shop serving collectors nationwide through Whatnot auctions and collector drops.",
+    "Meet PokePlay Studios, the home of PokePlay Live Pokemon card auctions and PokePlay Store collector drops shipped nationwide.",
   alternates: {
     canonical: "/about",
   },
@@ -15,12 +15,12 @@ export default function AboutPage() {
   return (
     <PageShell>
       <section className="page-hero compact">
-        <p className="eyebrow">About PokePlay</p>
+        <p className="eyebrow">PokePlay Studios</p>
         <h1>Welcome to the game room for Pokemon card collectors.</h1>
         <p>
-          PokePlayLive started as a collector-friendly live auction stream and is
-          growing into PokePlay Store, a home for drops, listings, and community
-          updates.
+          PokePlay Studios brings two sides of the hobby together: PokePlay Live
+          for the thrill of the next auction, and PokePlay Store for the cards
+          you want to come back to.
         </p>
         <Link className="button primary" href="/live">
           See Live Auctions
@@ -29,19 +29,19 @@ export default function AboutPage() {
       <ReviewBand />
       <section className="story-section">
         <article>
-          <h2>Independent, approachable, and built around the stream.</h2>
+          <h2>A small studio built around big collector energy.</h2>
           <p>
-            The PokePlay brand is intentionally playful without pretending to be
-            official. The site gives new buyers a clear place to learn who we
-            are, follow the stream, and find current listings.
+            We believe the best card hobby has room for the serious collector,
+            the first-time bidder, and the friend who came to watch one pack get
+            opened. PokePlay keeps that room open, one show and one shipment at a time.
           </p>
         </article>
         <article>
-          <h2>Utah-based, nationwide by design.</h2>
+          <h2>One brand, two ways to play.</h2>
           <p>
-            Utah is our home base, but the audience is online collectors across
-            the country. That means the site uses national SEO first while still
-            showing there are real people behind the stream.
+            PokePlay Live is the stream: live auctions, giveaways, and the next
+            exciting pull. PokePlay Store is the shop: current listings, future
+            drops, and the slow build toward a collector-first storefront.
           </p>
         </article>
       </section>

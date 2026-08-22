@@ -17,11 +17,11 @@ const siteUrl = "https://pokeplay.store";
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "PokePlay Store | Live Pokemon Card Auctions",
-    template: "%s | PokePlay Store",
+    default: "PokePlay Studios | Pokemon Cards, Live Auctions & Drops",
+    template: "%s | PokePlay Studios",
   },
   description:
-    "PokePlayLive hosts live Pokemon card auctions on Whatnot and is growing into PokePlay Store for collector drops shipped nationwide.",
+    "PokePlay Studios is home to PokePlay Live Pokemon card auctions and PokePlay Store collector drops, shipping nationwide.",
   keywords: [
     "Pokemon card auctions",
     "live Pokemon card auctions",
@@ -36,17 +36,17 @@ export const metadata: Metadata = {
     canonical: "/",
   },
   openGraph: {
-    title: "PokePlay Store | Live Pokemon Card Auctions",
+    title: "PokePlay Studios | Pokemon Cards, Live Auctions & Drops",
     description:
-      "Follow PokePlayLive for Whatnot auctions, collector drops, giveaways, and future PokePlay Store releases.",
+      "PokePlay Live auctions and PokePlay Store collector drops for Pokemon TCG fans nationwide.",
     url: siteUrl,
-    siteName: "PokePlay Store",
+    siteName: "PokePlay Studios",
     images: [
       {
-        url: "/pokeplay-logo.png",
-        width: 512,
-        height: 512,
-        alt: "PokePlayLive logo",
+        url: "/og.png",
+        width: 1728,
+        height: 912,
+        alt: "PokePlay Studios: Live Auctions and Collector Drops",
       },
     ],
     locale: "en_US",
@@ -54,10 +54,10 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary",
-    title: "PokePlay Store | Live Pokemon Card Auctions",
+    title: "PokePlay Studios | Pokemon Cards, Live Auctions & Drops",
     description:
-      "Live Pokemon card auctions, collector drops, and stream alerts from PokePlayLive.",
-    images: ["/pokeplay-logo.png"],
+      "Live Pokemon card auctions, collector drops, and stream alerts from PokePlay Studios.",
+    images: ["/og.png"],
   },
   icons: {
     icon: "/pokeplay-logo.png",
@@ -69,16 +69,11 @@ export const metadata: Metadata = {
 const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "OnlineStore",
-  name: "PokePlay Store",
-  alternateName: "PokePlayLive",
+  name: "PokePlay Studios",
+  alternateName: ["PokePlay Live", "PokePlay Store"],
   url: siteUrl,
   logo: `${siteUrl}/pokeplay-logo.png`,
   areaServed: "United States",
-  address: {
-    "@type": "PostalAddress",
-    addressRegion: "UT",
-    addressCountry: "US",
-  },
   sameAs: ["https://www.whatnot.com/user/pokeplaylive"],
 };
 

@@ -18,9 +18,9 @@ export default function ContactPage() {
           <p className="eyebrow">Stream alerts</p>
           <h1>Know when PokePlayLive is back in the game room.</h1>
           <p>
-            Sign up interest for stream reminders, drop alerts, and giveaways.
-            Resend wiring is planned next so the first version stays honest
-            while the backend is finished.
+            No stale schedule, no guessing. Follow PokePlay Live on Whatnot and
+            get notified when the next auction room opens. Store drops and email
+            updates are on the way as PokePlay Studios grows.
           </p>
           <a className="button secondary" href={whatnotUrl}>
             Follow on Whatnot
@@ -32,7 +32,7 @@ export default function ContactPage() {
         <SectionHeader
           eyebrow="Contact"
           title="For now, Whatnot is the fastest way to connect."
-          body="As social channels and email automation come online, this page can become the central contact and announcement hub."
+          body="Follow PokePlay Live to catch the next auction and watch this space for the first PokePlay Studios email updates."
         />
       </section>
     </PageShell>
