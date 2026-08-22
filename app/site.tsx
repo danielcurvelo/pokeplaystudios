@@ -5,8 +5,7 @@ export const whatnotUrl = "https://www.whatnot.com/user/pokeplaylive";
 const navItems = [
   { href: "/live", label: "PokePlay Live" },
   { href: "/shop", label: "PokePlay Store" },
-  { href: "/about", label: "Studios" },
-  { href: "/contact", label: "Alerts" },
+  { href: "/contact", label: "Stay Connected" },
 ];
 
 export function PageShell({ children }: { children: React.ReactNode }) {
@@ -14,11 +13,13 @@ export function PageShell({ children }: { children: React.ReactNode }) {
     <>
       <header className="site-header">
         <Link className="brand" href="/" aria-label="PokePlay Studios home">
-          <img src="/pokeplay-logo.png" alt="" width="56" height="56" />
-          <span>
-            <strong>PokePlay Studios</strong>
-            <small>Live, store, and collector community.</small>
-          </span>
+          <img
+            className="brand-wordmark"
+            src="/pokeplay-studios-wordmark-v2.png"
+            alt="PokePlay Studios"
+            width="220"
+            height="66"
+          />
         </Link>
         <nav aria-label="Main navigation">
           {navItems.map((item) => (
@@ -38,8 +39,7 @@ export function PageShell({ children }: { children: React.ReactNode }) {
         </div>
         <div className="footer-links">
           <a href={whatnotUrl}>Whatnot</a>
-          <Link href="/contact">Stream alerts</Link>
-          <Link href="/about">About</Link>
+          <Link href="/contact">Stay connected</Link>
         </div>
         <p className="disclaimer">
           PokePlay is an independent seller and community. We are not affiliated
@@ -90,38 +90,31 @@ export function ReviewBand() {
 
 export function ShopPreview() {
   const cards = [
-    ["Sealed Drops", "Booster boxes, ETBs, packs, and special releases."],
-    ["Singles", "Collector favorites and playable cards as inventory expands."],
-    ["Graded Slabs", "Display-worthy graded cards for serious collections."],
+    ["Sealed Drops", "inventory-sealed-drops.png", "Sealed Pokemon card drops"],
+    ["Singles & Slabs", "inventory-singles.png", "Collectible singles and graded cards"],
+    ["Collector Finds", "inventory-collector-finds.png", "Collector card finds"],
   ];
 
   return (
     <section className="shop-preview" aria-labelledby="shop-preview-title">
       <div className="shop-copy">
         <p className="eyebrow">PokePlay Store</p>
-        <h2 id="shop-preview-title">Great cards deserve a home beyond the auction.</h2>
+        <h2 id="shop-preview-title">The good stuff, all in one place.</h2>
         <p>
-          PokePlay Store is where stream finds, sealed favorites, and collector
-          surprises gather. Shop the active Whatnot listings today, then keep an
-          eye out as the dedicated storefront fills in.
+          Sealed drops, collector singles, and graded cards. Shop current
+          listings on Whatnot.
         </p>
         <a className="button primary" href={whatnotUrl}>
-          Shop Current Listings
+          Shop PokePlay Store
         </a>
       </div>
       <div className="product-stack">
-        <img
-          className="shop-brand-logo"
-          src="/pokeplay-store-logo.png"
-          alt="PokePlay Store logo"
-          width="300"
-          height="300"
-        />
-        {cards.map(([title, body]) => (
-          <article className="product-card" key={title}>
-            <span aria-hidden="true" className="card-stripe" />
-            <h3>{title}</h3>
-            <p>{body}</p>
+        {cards.map(([title, image, alt]) => (
+          <article className="inventory-tile" key={title}>
+            <img src={`/${image}`} alt={alt} />
+            <div className="inventory-label">
+              <span>{title}</span>
+            </div>
           </article>
         ))}
       </div>
@@ -129,23 +122,19 @@ export function ShopPreview() {
   );
 }
 
-export function AlertsForm() {
+export function WhatnotFollowCard() {
   return (
-    <aside className="alerts-form" aria-label="PokePlay Live alerts">
-      <p className="eyebrow">First call</p>
-      <h3>Follow now. Never chase a stale schedule.</h3>
+    <aside className="whatnot-follow-card" aria-label="Follow PokePlay Live on Whatnot">
+      <p className="eyebrow">PokePlay Live on Whatnot</p>
+      <h3>Keep your seat in the game room.</h3>
       <p>
-        PokePlay Live is built around the cards in the room, not a calendar that
-        needs constant updating. Follow our Whatnot profile and it will notify
-        you when the next auction opens.
+        Follow our profile and bookmark the shows you want to catch. You will
+        be ready for live auctions, giveaways, and new cards as they hit the
+        game room.
       </p>
       <a className="button secondary" href={whatnotUrl}>
-        Follow PokePlay Live
+        Follow and bookmark on Whatnot
       </a>
-      <p className="alerts-note">
-        Dedicated email alerts for drops, giveaways, and live shows are coming
-        as PokePlay Studios grows.
-      </p>
     </aside>
   );
 }

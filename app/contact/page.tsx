@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
-import { AlertsForm, PageShell, SectionHeader, whatnotUrl } from "../site";
+import { PageShell, SectionHeader, WhatnotFollowCard, whatnotUrl } from "../site";
 
 export const metadata: Metadata = {
-  title: "PokePlay Stream Alerts | Drops, Giveaways & Live Auctions",
+  title: "Follow PokePlay Live on Whatnot | PokePlay Studios",
   description:
-    "Join PokePlay stream alerts for future Pokemon card auction reminders, shop drops, and giveaway updates.",
+    "Follow and bookmark PokePlay Live on Whatnot for Pokemon card auctions, giveaways, sealed drops, singles, and collector finds.",
   alternates: {
     canonical: "/contact",
   },
@@ -15,24 +15,24 @@ export default function ContactPage() {
     <PageShell>
       <section className="split-section contact-top">
         <div>
-          <p className="eyebrow">Stream alerts</p>
-          <h1>Know when PokePlayLive is back in the game room.</h1>
+          <p className="eyebrow">Stay connected</p>
+          <h1>Keep up with the next PokePlay Live auction.</h1>
           <p>
-            No stale schedule, no guessing. Follow PokePlay Live on Whatnot and
-            get notified when the next auction room opens. Store drops and email
-            updates are on the way as PokePlay Studios grows.
+            Follow PokePlay Live on Whatnot and bookmark the shows you want to
+            catch. It is the best way to stay close to the cards, giveaways, and
+            collector conversation.
           </p>
           <a className="button secondary" href={whatnotUrl}>
-            Follow on Whatnot
+            Open PokePlay Live
           </a>
         </div>
-        <AlertsForm />
+        <WhatnotFollowCard />
       </section>
       <section className="section-grid">
         <SectionHeader
-          eyebrow="Contact"
-          title="For now, Whatnot is the fastest way to connect."
-          body="Follow PokePlay Live to catch the next auction and watch this space for the first PokePlay Studios email updates."
+          eyebrow="Your next seat"
+          title="Follow once. Find the next show faster."
+          body="PokePlay Live is where the action happens today. Follow the profile, bookmark the shows that catch your eye, and join us when the room opens."
         />
       </section>
     </PageShell>

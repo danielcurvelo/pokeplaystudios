@@ -12,7 +12,7 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const siteUrl = "https://pokeplay.store";
+const siteUrl = "https://pokeplaystudios.com";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -56,13 +56,13 @@ export const metadata: Metadata = {
     card: "summary",
     title: "PokePlay Studios | Pokemon Cards, Live Auctions & Drops",
     description:
-      "Live Pokemon card auctions, collector drops, and stream alerts from PokePlay Studios.",
+      "Live Pokemon card auctions, collector drops, and Whatnot shows from PokePlay Studios.",
     images: ["/og.png"],
   },
   icons: {
-    icon: "/pokeplay-logo.png",
-    shortcut: "/pokeplay-logo.png",
-    apple: "/pokeplay-logo.png",
+    icon: "/pokeplay-live-logo-v2.png",
+    shortcut: "/pokeplay-live-logo-v2.png",
+    apple: "/pokeplay-live-logo-v2.png",
   },
 };
 
@@ -72,7 +72,7 @@ const organizationSchema = {
   name: "PokePlay Studios",
   alternateName: ["PokePlay Live", "PokePlay Store"],
   url: siteUrl,
-  logo: `${siteUrl}/pokeplay-logo.png`,
+  logo: `${siteUrl}/pokeplay-studios-wordmark-v2.png`,
   areaServed: "United States",
   sameAs: ["https://www.whatnot.com/user/pokeplaylive"],
 };

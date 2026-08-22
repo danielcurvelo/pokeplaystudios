@@ -45,8 +45,8 @@ export default function ShopPage() {
           </article>
           <article className="feature-card">
             <span className="dot" aria-hidden="true" />
-            <h3>Drop alerts</h3>
-            <p>Follow on Whatnot now, with dedicated drop alerts coming as the shop grows.</p>
+            <h3>Follow the drops</h3>
+            <p>Follow PokePlay Live and bookmark shows so new inventory is easier to catch.</p>
           </article>
         </div>
       </section>

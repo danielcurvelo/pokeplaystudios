@@ -1,12 +1,12 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 import {
-  AlertsForm,
   FaqSchema,
   PageShell,
   ReviewBand,
   SectionHeader,
   ShopPreview,
+  WhatnotFollowCard,
   whatnotUrl,
 } from "./site";
 
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
 const auctionHighlights = [
   "Live Pokemon card auctions with game-room energy",
   "Sealed products, singles, slabs, and collector finds as inventory grows",
-  "Drop alerts for stream reminders, giveaways, and future shop launches",
+  "Follow and bookmark shows so live auctions, giveaways, and shop finds are easy to catch",
 ];
 
 const faqs = [
@@ -52,16 +52,15 @@ export default function Home() {
           <p className="eyebrow">PokePlay Studios</p>
           <h1 id="home-title">The game room for Pokemon card collectors.</h1>
           <p className="hero-lede">
-            PokePlay Studios is home to PokePlay Live, where every auction feels
-            like a seat at the table, and PokePlay Store, where collector finds
-            get a second chance to become your favorite card. We ship nationwide.
+            Live auctions, collector finds, and cards worth playing for. Shipped
+            nationwide.
           </p>
           <div className="hero-actions" aria-label="Primary actions">
             <a className="button primary" href={whatnotUrl}>
               Enter PokePlay Live
             </a>
             <Link className="button secondary" href="/contact">
-              Get Drop Alerts
+              Follow on Whatnot
             </Link>
             <Link className="button quiet" href="/shop">
               Visit PokePlay Store
@@ -71,17 +70,17 @@ export default function Home() {
         <div className="hero-panel" aria-label="PokePlayLive stream highlights">
           <img
             className="hero-logo"
-            src="/pokeplay-logo.png"
+            src="/pokeplay-live-logo-v2.png"
             alt="PokePlayLive logo"
             width="320"
             height="320"
           />
           <div className="auction-card">
             <span className="live-pill">Whatnot live auctions</span>
-            <h2>Cards, packs, slabs, and giveaways when we go live.</h2>
+            <h2>Pulls, packs, slabs, and giveaways in one lively game room.</h2>
             <p>
-              Follow the stream for the next show and join alerts so you do not
-              need to chase a fixed schedule.
+              Follow PokePlay Live on Whatnot for live cards, good conversation,
+              and collector surprises.
             </p>
           </div>
         </div>
@@ -113,15 +112,14 @@ export default function Home() {
 
       <section className="split-section">
         <div>
-          <p className="eyebrow">Stream alerts</p>
-          <h2>Get reminders for the next live auction.</h2>
+          <p className="eyebrow">PokePlay Live on Whatnot</p>
+          <h2>Keep the next live auction on your radar.</h2>
           <p>
-            There is no fixed calendar to maintain here. A Whatnot follow is the
-            easiest way to get the tap on the shoulder when the next PokePlay
-            Live auction is ready to go.
+            Follow PokePlay Live and bookmark the shows you want to catch. It is
+            the easiest way to stay close to the next auction.
           </p>
         </div>
-        <AlertsForm />
+        <WhatnotFollowCard />
       </section>
 
       <section className="faq-section" aria-labelledby="faq-title">

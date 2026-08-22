@@ -27,11 +27,56 @@ export default function LivePage() {
             Follow on Whatnot
           </a>
           <Link className="button secondary" href="/contact">
-            Join Alerts
+            Bookmark a Show
           </Link>
         </div>
       </section>
       <ReviewBand />
+      <section className="live-formats" aria-labelledby="live-formats-title">
+        <div className="live-formats-copy">
+          <p className="eyebrow">Game room formats</p>
+          <h2 id="live-formats-title">More ways to play for the next big hit.</h2>
+          <p>
+            PokePlay Live brings the energy of a game night to every stream,
+            with card auctions, surprise reveals, and collector-friendly games
+            built around the cards on the table.
+          </p>
+        </div>
+        <figure className="live-formats-art">
+          <img
+            src="/pokeplay-live-game-room.png"
+            alt="Illustrated PokePlay game room with a reveal board, prize wheel, card packs, and a live auction table"
+            width="1774"
+            height="887"
+          />
+        </figure>
+        <div className="format-grid">
+          <article className="format-card format-card-featured">
+            <span className="format-number">01</span>
+            <h3>Bango</h3>
+            <p>
+              A bingo-inspired board game where every hidden hit could reveal a
+              BIG prize. Watch the board change as the room plays for the reveal.
+            </p>
+          </article>
+          <article className="format-card">
+            <span className="format-number">02</span>
+            <h3>Live card auctions</h3>
+            <p>
+              Packs, singles, slabs, and collector surprises move quickly when
+              the right card lands on the table.
+            </p>
+          </article>
+          <article className="format-card">
+            <span className="format-number">03</span>
+            <h3>Prize-play moments</h3>
+            <p>
+              Giveaways, reveals, and game-night twists keep the stream fun
+              whether you are bidding or just hanging out.
+            </p>
+          </article>
+        </div>
+      </section>
       <section className="section-grid">
         <SectionHeader
           eyebrow="What to expect"
@@ -42,7 +87,7 @@ export default function LivePage() {
           <article className="feature-card">
             <span className="dot" aria-hidden="true" />
             <h3>Shows worth catching</h3>
-            <p>Our schedule follows the cards, so a Whatnot follow is your best invite to the next one.</p>
+            <p>Follow PokePlay Live and bookmark the shows that look good so you are ready when the room opens.</p>
           </article>
           <article className="feature-card">
             <span className="dot" aria-hidden="true" />

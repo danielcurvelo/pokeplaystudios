@@ -38,7 +38,7 @@ test("server-renders the PokePlay homepage", async () => {
 });
 
 test("server-renders core SEO routes", async () => {
-  for (const path of ["/live", "/shop", "/about", "/contact"]) {
+  for (const path of ["/live", "/shop", "/contact"]) {
     const response = await render(path);
     assert.equal(response.status, 200, path);
     const html = await response.text();
