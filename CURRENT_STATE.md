@@ -1,6 +1,6 @@
 # PokePlay Studios Current State
 
-Last updated: September 28, 2026
+Last updated: September 29, 2026
 
 ## Source Control and Deployment
 
@@ -43,6 +43,14 @@ Last updated: September 28, 2026
   operating procedures.
 - Added Spec Kit requirements, implementation plan, and task tracking under
   `specs/002-pokeplay-commerce/`.
+- Created the Shopify store, installed the Horizon theme, and kept storefront
+  access password-protected while setup continues.
+- Shopify Sidekick completed the language and format metafields, storefront
+  filters, and language plus sealed-product collections.
+- Added hidden Shopify drafts for Shipping & Processing, Returns & Refunds,
+  Local Pickup, and Contact & Support.
+- Set Shopify order processing to manual fulfillment; orders are not
+  automatically fulfilled after payment.
 
 ## Decisions in Force
 
@@ -60,6 +68,8 @@ Last updated: September 28, 2026
 - Danceology Studio pickup is available only for eligible orders after studio
   permission, procedures, and hours are confirmed.
 - A pickup order is never marked ready until it is physically at Danceology.
+- Shopify remains password-protected until payments, shipping, catalog, and
+  launch testing are complete.
 - Preorders, singles, slabs, subscriptions, loyalty, and paid advertising are
   outside the initial Phase 2 launch.
 
@@ -74,15 +84,12 @@ Last updated: September 28, 2026
 
 ## Next Milestone: Shopify Foundation
 
-1. Create and secure the Shopify account and select the appropriate plan.
-2. Apply PokePlay Store branding and configure the storefront theme.
-3. Configure business identity, payments, taxes, customer accounts, policies,
-   and notifications with the appropriate professional review.
-4. Create the Shopify metafields defined in
-   `docs/commerce/catalog-and-inventory.md`.
-5. Create `Online Store Fulfillment`, `Whatnot Reserve`, and
-   `Danceology Studio - Draper Pickup` inventory locations.
-6. Exclude `Whatnot Reserve` from online fulfillment.
+1. Finish Shopify Payments and confirm tax, notification, and account settings.
+2. Apply PokePlay Store branding and navigation to the Horizon theme.
+3. Review the hidden policy and support-page drafts, then publish and link
+   them only when their operational details are final.
+4. Create fulfillment and Whatnot-reserve locations only after their physical
+   address, storage, and reconciliation procedure are confirmed.
 
 ## Following Milestones
 
@@ -117,6 +124,7 @@ Last updated: September 28, 2026
 
 ## Working References
 
+- Shopify Sidekick handoff: `docs/commerce/shopify-sidekick-phase-2-setup.md`
 - Phase 2 requirements: `specs/002-pokeplay-commerce/spec.md`
 - Implementation plan: `specs/002-pokeplay-commerce/plan.md`
 - Task checklist: `specs/002-pokeplay-commerce/tasks.md`

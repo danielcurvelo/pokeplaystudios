@@ -13,18 +13,19 @@
 
 ## Shopify Foundation
 
-- [ ] Create and secure the Shopify account.
-- [ ] Select Basic and install Horizon.
-- [ ] Configure business details, payments, customer accounts, taxes, policies, and notifications.
+- [x] Create and secure the Shopify account.
+- [x] Select Basic and install Horizon.
+- [ ] Finish payments, taxes, customer accounts, policies, and notifications.
 - [ ] Connect `shop.pokeplaystudios.com` through Cloudflare.
 - [ ] Redirect `pokeplay.store` to the canonical store.
 - [ ] Apply PokePlay Store branding and navigation.
+- [x] Draft hidden shipping, returns, pickup, and support pages.
 
 ## Catalog
 
-- [ ] Create language, set, format, release date, and supplier metafields.
+- [x] Create language, set, format, release date, and supplier metafields.
 - [x] Define and document the PokePlay SKU convention.
-- [ ] Create language and format collections.
+- [x] Create language and format collections.
 - [ ] Add suppliers and the first wholesale purchase orders.
 - [ ] Receive and inspect initial inventory.
 - [ ] Prepare authorized catalog images and original featured-drop photography.
@@ -32,9 +33,8 @@
 
 ## Inventory and Fulfillment
 
-- [ ] Create Online Store Fulfillment.
-- [ ] Create Whatnot Reserve and exclude it from online fulfillment.
-- [ ] Create Danceology Studio - Draper Pickup.
+- [ ] Create fulfillment and Whatnot-reserve locations after their physical
+      addresses and reconciliation procedures are confirmed.
 - [ ] Test allocations to and reconciliation from Whatnot Reserve.
 - [ ] Configure packages and calculated shipping rates.
 - [ ] Add optional paid signature confirmation.
