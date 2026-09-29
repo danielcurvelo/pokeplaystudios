@@ -32,6 +32,7 @@ password-protected Shopify URL.
 
 ## Phase 2 Operations
 
+- Current project state and next milestones: `CURRENT_STATE.md`
 - Requirements and progress: `specs/002-pokeplay-commerce/`
 - Catalog and SKU rules: `docs/commerce/catalog-and-inventory.md`
 - Receiving and fulfillment procedures: `docs/commerce/operating-playbook.md`
