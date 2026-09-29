@@ -20,7 +20,7 @@ export const metadata: Metadata = {
 
 const auctionHighlights = [
   "Live Pokemon card auctions with game-room energy",
-  "Sealed products, singles, slabs, and collector finds as inventory grows",
+  "English, Japanese, and Chinese sealed products as inventory grows",
   "Follow and bookmark shows so live auctions, giveaways, and shop finds are easy to catch",
 ];
 

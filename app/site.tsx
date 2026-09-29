@@ -1,4 +1,8 @@
 export const whatnotUrl = "https://www.whatnot.com/user/pokeplaylive";
+const configuredStoreUrl = process.env.NEXT_PUBLIC_SHOP_URL?.trim();
+
+export const storeIsLive = Boolean(configuredStoreUrl);
+export const storeUrl = configuredStoreUrl || whatnotUrl;
 
 const navItems = [
   { href: "/live", label: "PokePlay Live" },
@@ -10,6 +14,8 @@ export function PageShell({ children }: { children: React.ReactNode }) {
   return (
     <>
       <header className="site-header">
+        {/* Full-page navigation avoids client-router failures on Cloudflare Workers. */}
+        {/* eslint-disable-next-line @next/next/no-html-link-for-pages */}
         <a className="brand" href="/" aria-label="PokePlay Studios home">
           <img
             className="brand-wordmark"
@@ -36,6 +42,7 @@ export function PageShell({ children }: { children: React.ReactNode }) {
           </p>
         </div>
         <div className="footer-links">
+          <a href="/shop">PokePlay Store</a>
           <a href={whatnotUrl}>Whatnot</a>
           <a href="/contact">Stay connected</a>
         </div>
@@ -88,9 +95,9 @@ export function ReviewBand() {
 
 export function ShopPreview() {
   const cards = [
-    ["Sealed Drops", "inventory-sealed-drops.png", "Sealed Pokemon card drops"],
-    ["Singles & Slabs", "inventory-singles.png", "Collectible singles and graded cards"],
-    ["Collector Finds", "inventory-collector-finds.png", "Collector card finds"],
+    ["English Sealed", "inventory-sealed-drops.png", "English sealed Pokemon card products"],
+    ["Japanese Drops", "inventory-singles.png", "Japanese Pokemon card releases"],
+    ["Chinese Releases", "inventory-collector-finds.png", "Chinese Pokemon card releases"],
   ];
 
   return (
@@ -99,11 +106,11 @@ export function ShopPreview() {
         <p className="eyebrow">PokePlay Store</p>
         <h2 id="shop-preview-title">The good stuff, all in one place.</h2>
         <p>
-          Sealed drops, collector singles, and graded cards. Shop current
-          listings on Whatnot.
+          English, Japanese, and Chinese sealed releases, selected for collectors
+          and shipped nationwide.
         </p>
-        <a className="button primary" href={whatnotUrl}>
-          Shop PokePlay Store
+        <a className="button primary" href="/shop">
+          Explore PokePlay Store
         </a>
       </div>
       <div className="product-stack">

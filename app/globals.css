@@ -323,6 +323,77 @@ h3 {
   margin-top: 26px;
 }
 
+.language-grid {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 26px;
+}
+
+.language-card {
+  background: rgba(255, 250, 240, 0.9);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  min-height: 230px;
+  padding: 24px;
+}
+
+.language-card:nth-child(1) {
+  border-top: 8px solid var(--orange);
+}
+
+.language-card:nth-child(2) {
+  border-top: 8px solid var(--blue);
+}
+
+.language-card:nth-child(3) {
+  border-top: 8px solid var(--green);
+}
+
+.language-code {
+  color: var(--muted);
+  display: block;
+  font-size: 0.78rem;
+  font-weight: 800;
+  margin-bottom: 34px;
+}
+
+.language-card p,
+.pickup-band p,
+.store-status {
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.store-status {
+  font-size: 0.92rem !important;
+  margin-top: 18px;
+}
+
+.pickup-band {
+  align-items: start;
+  background: var(--foreground);
+  color: var(--cream);
+  display: grid;
+  gap: 48px;
+  grid-template-columns: minmax(0, 1fr) minmax(320px, 0.85fr);
+  margin: 0;
+  max-width: none;
+  padding: 72px max(24px, calc((100vw - 1112px) / 2));
+}
+
+.pickup-band h2 {
+  margin-bottom: 0;
+}
+
+.pickup-band p {
+  color: #f2e6d2;
+}
+
+.pickup-band strong {
+  color: var(--yellow);
+}
+
 .live-formats {
   background: var(--cream);
   border-bottom: 1px solid var(--line);
@@ -603,7 +674,9 @@ details p {
   }
 
   .review-band,
-  .feature-grid {
+  .feature-grid,
+  .language-grid,
+  .pickup-band {
     grid-template-columns: 1fr;
   }
 
@@ -641,6 +714,11 @@ details p {
   .faq-section,
   .review-band,
   .site-footer {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .pickup-band {
     padding-left: 18px;
     padding-right: 18px;
   }

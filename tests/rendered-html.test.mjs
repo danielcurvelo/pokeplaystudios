@@ -46,3 +46,17 @@ test("server-renders core SEO routes", async () => {
     assert.match(html, /https:\/\/www\.whatnot\.com\/user\/pokeplaylive/);
   }
 });
+
+test("shop page presents the phase two catalog and pickup model", async () => {
+  const response = await render("/shop");
+  assert.equal(response.status, 200);
+
+  const html = await response.text();
+  assert.match(html, /English/);
+  assert.match(html, /Japanese/);
+  assert.match(html, /Simplified Chinese/);
+  assert.match(html, /Traditional Chinese/);
+  assert.match(html, /Danceology Studio/);
+  assert.match(html, /wait for the ready notification/i);
+  assert.match(html, /Shop Current Listings/);
+});
