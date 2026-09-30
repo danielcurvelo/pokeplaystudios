@@ -1,0 +1,4 @@
+interface:
+  display_name: "Product Display Marketing"
+  short_description: "Turn product photos into sketch-and-ray marketing art"
+  default_prompt: "Use $product-display-marketing to turn my product display photo into a store marketing hero."
